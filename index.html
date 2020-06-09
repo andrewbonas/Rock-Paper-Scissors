@@ -7,8 +7,8 @@
 <body>
   <script>
 
-let playerScore = 0;
-let computerScore = 0;
+let playerScore = 1;
+let computerScore = 1;
 
 
 function computerPlay(computerChoice){
@@ -24,30 +24,37 @@ function computerPlay(computerChoice){
 function playRound(playerSelection, computerSelection) {
 	
     if(playerSelection === computerSelection){
-           return  ['It is a tie! The computer chose ' + computerSelection]; 
+           alert ('It is a tie! The computer chose ' + computerSelection +".") ; 
+         return;
          }
 
     if(playerSelection === 'rock'){
         if(computerSelection === 'scissors'){
-            return ['Player Wins! The computer chose ' + computerSelection];
+            alert('Player Wins! The computer chose ' + computerSelection + ".");
+            return playerScore++;     
                 }else{
-            return ['Computer Wins! The computer chose ' + computerSelection];
+            alert('Computer Wins! The computer chose ' + computerSelection + ".");
+            return computerScore++;
         }
     }
 
     if(playerSelection === 'paper'){
         if(computerSelection === 'scissors'){
-            return ['Computer Wins! The computer chose ' + computerSelection] ;
+           alert('Computer Wins! The computer chose ' + computerSelection + ".") ;
+           return computerScore++;      
                 }else{
-            return ['Player Wins! The computer chose ' + computerSelection];
+            alert('Player Wins! The computer chose ' + computerSelection + ".");
+            return playerScore++;
          }
     }
 
      if(playerSelection === 'scissors'){
         if(computerSelection === 'rock'){
-            return ['Computer Wins! The computer chose ' + computerSelection];
+            alert('Computer Wins! The computer chose ' + computerSelection + ".");
+            return computerScore++;     
                 }else{
-            return ['Player Wins! The computer chose ' + computerSelection];
+            alert('Player Wins! The computer chose ' + computerSelection + ".");
+            return playerScore++;
         }
     }
 }

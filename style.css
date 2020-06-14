@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(234, 234, 241, 0.432);
+}
+#bigWrapper{
+    display: flex;
+    justify-content: center;
+}
+#score{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 500px;
+  justify-content: space-evenly;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  color:rgb(53, 46, 46);
+}
+#computerChoice{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(53, 46, 46);
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 40px;
+    width: 170px;
+    margin-right: 30px;
+    border: 2px solid rgba(209, 210, 212, 0.6);
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(206, 206, 214);
+    font-family: 'Raleway', sans-serif;
+    color:rgb(53, 46, 46);
+}
